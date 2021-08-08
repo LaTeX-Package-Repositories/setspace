@@ -1,0 +1,68 @@
+\documentclass[a4paper]{article}
+\usepackage{lmodern}
+\usepackage{verbatim}
+\usepackage{setspace}
+\makeatletter
+\def\pkginfo#1 #2 #3\relax{%
+\def\filedate{#1}%
+\def\fileversion{#2}%
+}
+\expandafter\expandafter\expandafter\pkginfo\csname ver@setspace.sty\endcsname\relax
+\makeatother
+\title{The setspace Package\thanks{Currently maintained by David Carlisle and others at\\\texttt{https://github.com/rf-latex/setspace/issues}}}
+\date{\filedate}
+\author{Geoffrey Tobin\and Robin Fairbairns}
+\begin{document}
+
+\maketitle
+
+ Usage:
+
+\begin{verbatim}
+                \documentclass[...]{...}
+                \usepackage{setspace}
+\end{verbatim}
+
+
+         This package (originally based on a \LaTeX\,2.09 style
+         option, \texttt{doublespace} option created by Stephen Page)
+         provides commands and environments for doing double and
+         one-and-a-half spacing based on the font size.
+
+         Single spacing is the default.
+
+         The commands \verb|\singlespacing|, \verb|\onehalfspacing|, and
+         \verb|\doublespacing|, are for use in the preamble to set the overall
+         spacing for the document.  If a different spacing is required then
+         the \verb|\setstretch|{baselinestretch} command can be used in the
+         preamble to set the baselinestretch appropriately.  The default
+         spacing with this style option is single spacing.
+
+         Three environments, \verb|singlespace|, \verb|onehalfspace|,
+         and \verb|doublespace|, allow the spacing to be changed
+         within the document.  Both the \verb|onehalfspace| and
+         \verb|doublespace| environments are intended to increase the
+         spacing, so the \verb|onehalfspace| environment should not be
+         used in a double spaced document.
+
+         If an increased spacing different from one-and-a-half or
+         double spacing is required then the spacing environment can
+         be used.  The \verb|spacing| environment takes one argument
+         which is the larger baselinestretch to use, e.g.,\\
+         \verb|\begin{spacing}{2.5}|.
+
+           \verb|\footins| is adjusted the same as \verb|\parskip| ---
+           it appears to work. it loses stretch parts but don't
+           consider that to be crucial
+
+
+\clearpage
+\addtolength\textwidth{100pt}
+\addtolength\oddsidemargin{-70pt}
+\setlength\columnseprule{1pt}
+\setlength\columnsep{10pt}
+\twocolumn
+\tiny
+\verbatiminput{setspace.sty}
+
+\end{document}
