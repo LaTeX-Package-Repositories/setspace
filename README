@@ -8,6 +8,7 @@ under LaTeX 2e.
 The package now acts "natively" as a 2e package under LaTeX 2e, and
 (insofar as is possibe) as a 2.09 package under LaTeX 2.09.
 
-Please report any problems to Robin Fairbairns <rf10@cam.ac.uk>
+Please report any problems to
+https://github.com/rf-latex/setspace/issues
 (A revised version of setspace-test.tex, that shows the problem
 reported, will be much appreciated.)

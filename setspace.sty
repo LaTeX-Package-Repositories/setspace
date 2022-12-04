@@ -1,5 +1,6 @@
 % \iffalse meta-comment
 %
+% Copyright (C) 2022 by LaTeX Team 
 % Copyright (C) 2011 by Robin Fairbairns (rf10@cam.ac.uk)
 % Copyright (C) 2000 by Geoffrey Tobin
 %
@@ -23,23 +24,12 @@
 %%% ======================================================================
 %%%  @LaTeX-style-file{
 %%%     filename        = "setspace.sty",
-%%%     version         = "6.7a",
-%%%     date            = "Fri 1 December 2000",
-%%%     time            = "17:49 UT+11",
-%%%     author          = "Geoffrey Tobin",
-%%%     address         = "Department of Electronic Engineering
-%%%                        Faculty of Science and Technology
-%%%                        La Trobe University
-%%%                        Bundoora VIC 3086
-%%%                        Australia",
-%%%     email           = "G.Tobin@latrobe.edu.au (Internet)",
-%%%     telephone       = "(+ 613) 9479-3736",
-%%%     FAX             = "(+ 613) 9479-3025",
+%%%     version         = "6.7b",
+%%%     date            = "4 December 2022",
 %%%     supported       = "yes",
 %%%     archived        = "CTAN",
 %%%     keywords        = "LaTeX package, line spacing",
 %%%     codetable       = "ISO/ASCII",
-%%%     checksum        = "11793 546 2608 21972",
 %%%     docstring       = "setspace.sty is a LaTeX (2e) package.
 %%%                        Comments and bug reports welcome!
 %%%                        
@@ -204,12 +194,9 @@
 %%%                        requested package options for the three
 %%%                        common spacings.
 %%%
-%%%                        The checksum field above contains a CRC-16
-%%%                        checksum as the first value, followed by the
-%%%                        equivalent of the standard UNIX wc (word
-%%%                        count) utility output of lines, words, and
-%%%                        characters.  This is produced by Robert
-%%%                        Solovay's checksum utility."
+%%%                        DPC Guard against \@ptsize not being defined
+%%%                        https://github.com/rf-latex/setspace/issues/5
+%%%
 %%% }
 %%% ======================================================================
 %% FILE:   setspace.sty in SYS2.TEX.PUB.ISULATEX.STYLES
@@ -287,12 +274,12 @@
 
 \@ifundefined{NeedsTeXFormat}{% 2.09 version
 \def \filename {setspace.sty}
-\def \filedate {2000/12/01}
-\def \fileversion {6.7a}
+\def \filedate {2022/12/04}
+\def \fileversion {6.7b}
 \typeout {Package: `setspace' \fileversion\space <\filedate>}
 }{% 2e version
 \NeedsTeXFormat {LaTeX2e}[1994/12/01]
-\ProvidesPackage {setspace}[2011/12/19 v6.7a set line spacing]
+\ProvidesPackage {setspace}[2022/12/04 v6.7b set line spacing]
 }
 
 % BP: add nodisplayskipstretch option and \setdisplayskipstretch command.
@@ -349,6 +336,8 @@
 
 \newcommand{\onehalfspacing}{%
   \setstretch{1.25}%  default
+% DPC 6.7b guard \@ptsize
+  \ifx\@ptsize\@undefined\else
   \ifcase \@ptsize \relax % 10pt
     \setstretch {1.25}%
   \or % 11pt
@@ -356,16 +345,20 @@
   \or % 12pt
     \setstretch {1.241}%
   \fi
+  \fi
 }
 
 \newcommand{\doublespacing}{%
   \setstretch {1.667}%  default
+% DPC 6.7b guard \@ptsize
+  \ifx\@ptsize\@undefined\else
   \ifcase \@ptsize \relax % 10pt
     \setstretch {1.667}%
   \or % 11pt
     \setstretch {1.618}%
   \or % 12pt
     \setstretch {1.655}%
+  \fi
   \fi
 }
 
@@ -431,7 +424,7 @@
 
 % GT:  Wed 24 Jan 1996:  This footnote code was copied from LaTeX and
 % modified rather naively.  It had to be brought up to date, not only
-% because of LaTeX's new color ability, but also because ther had
+% because of LaTeX's new color ability, but also because there had
 % been major changes to this code in LaTeX at least as far back as
 % March 1992.
 
@@ -456,12 +449,16 @@
     \splitmaxdepth \dp\strutbox \floatingpenalty \@MM
     \hsize\columnwidth
     \@parboxrestore
+% DPC 6.7b added from latex.ltx
+    \def\@currentcounter{footnote}%
     \protected@edef\@currentlabel{%
       \csname p@footnote\endcsname\@thefnmark
     }%
     \color@begingroup
       \@makefntext{%
         \rule\z@\footnotesep\ignorespaces#1\@finalstrut\strutbox}%
+% DPC 6.7b added from latex.ltx
+    \par
     \color@endgroup}}
 
 % Minipage footnotes.
@@ -474,11 +471,15 @@
     \reset@font\footnotesize
     \hsize\columnwidth
     \@parboxrestore
+% DPC 6.7b added from latex.ltx
+    \def\@currentcounter{mpfootnote}%
     \protected@edef\@currentlabel{%
       \csname p@mpfootnote\endcsname\@thefnmark}%
     \color@begingroup
       \@makefntext{%
        \rule\z@\footnotesep\ignorespaces#1\@finalstrut\strutbox}%
+% DPC 6.7b added from latex.ltx
+    \par
    \color@endgroup}}
 
 % ** Line space environments.
