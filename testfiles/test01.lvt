@@ -1,6 +1,10 @@
 \documentclass{article}
+\input{regression-test}
 \usepackage{setspace}
 \usepackage{lipsum}
+\START
+\showoutput
+\showboxdepth=3
 \onehalfspacing
 \begin{document}
 \title{merry setspace christmas test}

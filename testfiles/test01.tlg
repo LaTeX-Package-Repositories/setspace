@@ -1,0 +1,140 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(test01.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line ....
+Completed box being shipped out [1]
+\vbox(633.0+0.0)x407.0
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0 []
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 26.62918fil
+...\write-{}
+...\glue(\topskip) 10.0
+...\hbox(0.0+0.0)x0.0
+...\glue 20.00003
+...\glue -20.00003
+...\penalty -51
+...\glue 20.00003
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 15.5
+...\hbox(12.0+3.3611)x345.0, glue set 70.45317fil []
+...\glue 15.00002
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 1.88896
+...\hbox(12.24994+5.25005)x345.0, glue set 138.5614fil []
+...\glue 10.00002
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 2.01663
+...\hbox(7.73332+0.0)x345.0, glue set 145.08362fil []
+...\penalty -51
+...\glue 10.0 plus 3.0 minus 5.0
+...\glue 15.00002
+...\glue -15.00002
+...\penalty -300
+...\glue 15.00002
+...\glue -15.00002
+...\glue 15.0694 plus 4.30554 minus 0.86108
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 12.50002
+...\hbox(9.99998+2.79999)x345.0, glue set 267.60011fil []
+...\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline \ETC.}
+...\penalty 10000
+...\glue 9.90276 plus 0.86108
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 5.25557
+...\hbox(6.94444+1.94444)x345.0, glue set 0.258 []
+...\penalty 10100
+...\glue(\baselineskip) 6.11111
+...\hbox(6.94444+1.94444)x345.0, glue set - 0.26057 []
+...\glue(\baselineskip) 6.11111
+...\hbox(6.94444+1.94444)x345.0, glue set 0.28203 []
+...\glue(\baselineskip) 6.11111
+...\hbox(6.94444+1.94444)x345.0, glue set 0.0347 []
+...\penalty 100
+...\glue(\baselineskip) 6.11111
+...\hbox(6.94444+1.94444)x345.0, glue set 0.4031 []
+...\glue(\baselineskip) 6.11111
+...\hbox(6.94444+1.94444)x345.0, glue set 0.52022 []
+...\glue(\baselineskip) 6.11111
+...\hbox(6.94444+1.94444)x345.0, glue set 0.44936 []
+...\glue(\baselineskip) 6.11111
+...\hbox(6.94444+1.94444)x345.0, glue set 0.47633 []
+...\glue(\baselineskip) 6.11111
+...\hbox(6.94444+1.94444)x345.0, glue set 0.04164 []
+...\penalty 100
+...\glue(\baselineskip) 6.11111
+...\hbox(6.94444+1.94444)x345.0, glue set 0.1887 []
+...\glue(\baselineskip) 6.11111
+...\hbox(6.94444+1.94444)x345.0, glue set - 0.49617 []
+...\penalty 150
+...\glue(\baselineskip) 6.90477
+...\hbox(6.15079+0.0)x345.0, glue set 311.05547fil []
+...\penalty -300
+...\glue 13.99301 plus 4.30554 minus 0.86108
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 9.16669
+...\hbox(8.33331+2.33331)x345.0, glue set 235.19717fil []
+...\write1{\@writefile{toc}{\protect \contentsline {subsection}{\protect \numberline \ETC.}
+...\penalty 10000
+...\glue 6.45831 plus 0.86108
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
+...\glue(\baselineskip) 5.72224
+...\hbox(6.94444+1.94444)x345.0, glue set - 0.16528 []
+...\penalty 10000
+...\glue(\baselineskip) 6.11111
+...\hbox(6.94444+1.94444)x345.0, glue set - 0.53407 []
+...\glue(\baselineskip) 6.11111
+...\hbox(6.94444+1.94444)x345.0, glue set - 0.00539 []
+...\glue(\baselineskip) 6.11111
+...\hbox(6.94444+1.94444)x345.0, glue set 0.59581 []
+...\glue(\baselineskip) 6.11111
+...\hbox(6.94444+1.94444)x345.0, glue set 0.20587 []
+...\glue(\baselineskip) 6.11111
+...\hbox(6.94444+1.94444)x345.0, glue set 0.71701 []
+...\glue(\baselineskip) 6.11111
+...\hbox(6.94444+1.94444)x345.0, glue set 0.09024 []
+...\penalty 150
+...\glue(\lineskip) 1.0
+...\hbox(17.5+12.5)x345.0, glue set 198.52745fil []
+...\glue -5.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.55556
+..\hbox(6.44444+0.0)x345.0
+...\hbox(6.44444+0.0)x345.0, glue set 170.0fil []
+(test01.aux)
