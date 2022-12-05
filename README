@@ -5,10 +5,7 @@ Tobin's LaTeX 2.09 original, except for patches that avoid a problem
 with \@setsize, when the package is used with other 2.09 packages
 under LaTeX 2e.
 
-The package now acts "natively" as a 2e package under LaTeX 2e, and
-(insofar as is possibe) as a 2.09 package under LaTeX 2.09.
 
 Please report any problems to
-https://github.com/rf-latex/setspace/issues
-(A revised version of setspace-test.tex, that shows the problem
-reported, will be much appreciated.)
+https://github.com/latex-package-repositories/setspace/issues
+
